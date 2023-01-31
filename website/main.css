@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,200;1,400;1,500&display=swap');
+
+:root {
+    --main-: rgb(36, 32, 20);
+    --second-: #9aaab3;
+    --accent-: #79786E;
+    --subcent-: rgb(77, 59, 31);
+    --gold-: #A97620;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url(pexels-aleksejs-bergmanis-681390.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contianer {
+    height: fit-content;
+    width: fit-content;
+    background-color: rgba(36, 32, 20, 0.65);
+    padding: 5% 20%;
+    border-radius: 15px;
+}
+
+.contianer h1 {
+    color: #FFF;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contianer form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+button {
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 15px;
+    margin-top: 1rem;
+    background-color: var(--accent-);
+    color: var(--main-);
+}
+
+button:hover {
+    background-color: var(--gold-);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.btns {
+    display: flex;
+    gap: 1rem;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    align-items: center;
+}
+
+#feelings, #zip {
+    width: 100%;
+    outline: none;
+    resize: none;
+    color: var(--main-);
+    background-color: var(--second-);
+    padding: 1rem;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+}
+
+/* Results syling */
+.results {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15%;
+    padding: 5% 5%;
+    border: solid 2px var(--second-);
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: 0.4s;
+}
+
+#content {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 700;
+}
+
+#temp {
+    font-size: 3rem;
+    border-left: solid 2px var(--second-);
+    padding-left: 1.5rem;
+    margin-left: 1rem;
+}
+
+.chr {
+    color: var(--gold-);
+    font-weight: 600;
+}
+
+.hidden {
+    display: none;
+    transition: 0.4s;
+}
